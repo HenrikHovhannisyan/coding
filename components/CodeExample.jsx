@@ -1,23 +1,25 @@
-"use client";
-
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
-import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import js from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-
-SyntaxHighlighter.registerLanguage("javascript", js);
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const CodeExample = ({ code, output }) => {
   const [showResult, setShowResult] = useState(false);
 
   return (
-    <div className="bg-gray-900 text-white p-4 rounded-lg mb-4 shadow-lg max-w-md">
+    <div className="bg-gray-900 text-white p-4 rounded-lg mb-4 mt-4 shadow-lg overflow-auto max-w-min">
       <SyntaxHighlighter
         language="javascript"
-        style={atomOneDark}
-        customStyle={{ background: "transparent", padding: 0 }}
+        style={atomDark}
+        customStyle={{
+          background: "transparent",
+          fontSize: "0.875rem",
+          padding: "0",
+          margin: "0",
+        }}
+        wrapLongLines
+        showLineNumbers
       >
         {code}
       </SyntaxHighlighter>
@@ -31,7 +33,7 @@ const CodeExample = ({ code, output }) => {
       </button>
 
       {showResult && (
-        <div className="mt-4 p-3 bg-black text-green-400 rounded text-sm whitespace-pre-wrap">
+        <div className="mt-4 p-3 bg-black text-teal-600 rounded text-sm whitespace-pre-wrap">
           {output}
         </div>
       )}

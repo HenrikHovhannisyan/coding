@@ -5,16 +5,12 @@ import LessonLayout from "@/components/LessonLayout";
 import CodeExample from "@/components/CodeExample";
 
 const page = () => {
-  const code = `
-console.log(myVar);
+  const code = `console.log(myVar);
 var myVar = 5;`;
   const output = `undefined`;
 
   return (
-    <LessonLayout
-      title="JavaScript Hoisting"
-      description="Понимание механизма поднятия переменных и функций в JavaScript."
-    >
+    <LessonLayout title="JavaScript Hoisting">
       <p className="mb-4">
         В JavaScript переменные и объявления функций «поднимаются» в верхнюю
         часть своей области видимости. Пример:
