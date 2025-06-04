@@ -10,3 +10,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+code {
+  background: #282a36;
+  border-radius: 2px;
+  color: #868d9a;
+  font-family: Consolas, Lucida Console, Menlo, Monaco, monospace;
+  padding: 2px 4px;
+}
