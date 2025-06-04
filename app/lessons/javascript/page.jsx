@@ -12,7 +12,7 @@ const lessons = [
 
 const Page = () => {
   return (
-    <div>
+    <>
       <h1 className="text-xl font-bold mb-4 flex items-center">
         <FontAwesomeIcon icon={faJs} className="text-yellow-400 mr-2" />
         JavaScript
@@ -29,7 +29,7 @@ const Page = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };
 

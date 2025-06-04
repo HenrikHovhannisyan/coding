@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-          <Header />
-        <div className="mx-auto max-w-8xl p-2 sm:p-6 lg:p-8">
+        <Header />
+        <div className="mx-auto container p-2 sm:p-6 lg:p-8">
           <Breadcrumbs />
           {children}
         </div>
