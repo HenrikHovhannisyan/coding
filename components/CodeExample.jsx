@@ -24,13 +24,15 @@ const CodeExample = ({ code, output }) => {
         {code}
       </SyntaxHighlighter>
 
-      <button
-        onClick={() => setShowResult(!showResult)}
-        className="mt-4 flex items-center bg-green-600 hover:bg-green-700 text-white font-medium text-sm py-1 px-2 rounded cursor-pointer"
-      >
-        <FontAwesomeIcon icon={faPlay} className="mr-2" />
-        Run
-      </button>
+      {output && (
+        <button
+          onClick={() => setShowResult(!showResult)}
+          className="mt-4 flex items-center bg-green-600 hover:bg-green-700 text-white font-medium text-sm py-1 px-2 rounded cursor-pointer"
+        >
+          <FontAwesomeIcon icon={faPlay} className="mr-2" />
+          Run
+        </button>
+      )}
 
       {showResult && (
         <div className="mt-4 p-3 bg-black text-teal-600 rounded text-sm whitespace-pre-wrap">

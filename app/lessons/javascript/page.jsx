@@ -7,7 +7,7 @@ import { faJs } from "@fortawesome/free-brands-svg-icons";
 
 const lessons = [
   { title: "Hoisting", path: "/lessons/javascript/hosting" },
-  { title: "Array.map()", path: "/lessons/javascript/array/map" },
+  // { title: "Array.map()", path: "/lessons/javascript/array/map" },
 ];
 
 const Page = () => {
