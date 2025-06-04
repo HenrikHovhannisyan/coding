@@ -6,7 +6,7 @@ const page = () => {
     <div className="">
       <h1 className="text-xl font-bold mb-4">Lessons</h1>
       <Link
-        className="bg-teal-600 hover:bg-emerald-800 text-white font-bold py-2 px-4 rounded"
+        className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
         href="/lessons/javascript"
       >
         Javascript
