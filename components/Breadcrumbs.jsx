@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 const Breadcrumbs = () => {
   const pathname = usePathname();
+  if (pathname === "/") return null;
   const pathParts = pathname.split("/").filter(Boolean);
   let href = "";
 
