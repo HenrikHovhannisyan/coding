@@ -18,7 +18,7 @@ const Page = () => {
         JavaScript
       </h5>
       <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
-        Connect with one of our available wallet providers or create a new one.
+        JavaScript Tutorials
       </p>
       <ul className="my-4 space-y-3">
         {lessons.map((lesson, index) => (
