@@ -6,7 +6,7 @@ import CodeExample from "@/components/CodeExample";
 
 const page = () => {
   return (
-    <LessonLayout title="JavaScript Scope">
+    <LessonLayout title="JavaScript Scope" page="javascript/scope">
       <ul className="mb-8 max-w-max space-y-3 list-none text-white">
         <li>
           <a

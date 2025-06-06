@@ -6,7 +6,10 @@ import CodeExample from "@/components/CodeExample";
 
 const page = () => {
   return (
-    <LessonLayout title="JavaScript Hoisting">
+    <LessonLayout
+      title="JavaScript Hoisting"
+      page="javascript/hosting"
+    >
       <p>
         Поднятие предполагает, что объявления переменных <code>var</code> и
         функций <code>function</code>
