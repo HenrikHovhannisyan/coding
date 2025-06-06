@@ -7,13 +7,13 @@ import CodeExample from "@/components/CodeExample";
 const page = () => {
   return (
     <LessonLayout title="JavaScript Scope">
-      <ul className="mb-8 max-w-max space-y-1 list-none text-white">
+      <ul className="mb-8 max-w-max space-y-3 list-none text-white">
         <li>
           <a
             href="#global-scope"
             className="text-teal-400 hover:underline transition"
           >
-            Global Scope – Глобальная область видимости
+            <strong>Global Scope</strong> – Глобальная область видимости
           </a>
         </li>
         <li>
@@ -21,7 +21,7 @@ const page = () => {
             href="#local-scope"
             className="text-teal-400 hover:underline transition"
           >
-            Local Scope – Локальная область видимости
+            <strong>Local Scope</strong> – Локальная область видимости
           </a>
         </li>
         <li>
@@ -29,7 +29,7 @@ const page = () => {
             href="#function-scope"
             className="text-teal-400 hover:underline transition"
           >
-            Function Scope – Область видимости функции
+            <strong>Function Scope</strong> – Область видимости функции
           </a>
         </li>
         <li>
@@ -37,7 +37,7 @@ const page = () => {
             href="#block-scope"
             className="text-teal-400 hover:underline transition"
           >
-            Block Scope – Область видимости блока
+            <strong>Block Scope</strong> – Область видимости блока
           </a>
         </li>
         <li>
@@ -45,7 +45,7 @@ const page = () => {
             href="#lexical-scope"
             className="text-teal-400 hover:underline transition"
           >
-            Lexical Scope – Лексическая область видимости
+            <strong>Lexical Scope</strong> – Лексическая область видимости
           </a>
         </li>
       </ul>
