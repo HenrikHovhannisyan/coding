@@ -7,45 +7,45 @@ import CodeExample from "@/components/CodeExample";
 const page = () => {
   return (
     <LessonLayout title="JavaScript Scope">
-      <ul className="mb-8 max-w-max space-y-3">
+      <ul className="mb-8 max-w-max space-y-1 list-none text-white">
         <li>
           <a
             href="#global-scope"
-            className="block p-4 bg-cyan-800 rounded-lg text-white hover:bg-cyan-950 transition"
+            className="text-teal-400 hover:underline transition"
           >
-            Global Scope - Глобальная область видимости
+            Global Scope – Глобальная область видимости
           </a>
         </li>
         <li>
           <a
             href="#local-scope"
-            className="block p-4 bg-cyan-800 rounded-lg text-white hover:bg-cyan-950 transition"
+            className="text-teal-400 hover:underline transition"
           >
-            Local Scope - Локальная область видимости
+            Local Scope – Локальная область видимости
           </a>
         </li>
         <li>
           <a
             href="#function-scope"
-            className="block p-4 bg-cyan-800 rounded-lg text-white hover:bg-cyan-950 transition"
+            className="text-teal-400 hover:underline transition"
           >
-            Function Scope - Область видимости функции
+            Function Scope – Область видимости функции
           </a>
         </li>
         <li>
           <a
             href="#block-scope"
-            className="block p-4 bg-cyan-800 rounded-lg text-white hover:bg-cyan-950 transition"
+            className="text-teal-400 hover:underline transition"
           >
-            Block Scope - Область видимости блока
+            Block Scope – Область видимости блока
           </a>
         </li>
         <li>
           <a
             href="#lexical-scope"
-            className="block p-4 bg-cyan-800 rounded-lg text-white hover:bg-cyan-950 transition"
+            className="text-teal-400 hover:underline transition"
           >
-            Lexical Scope - Лексическая область видимости
+            Lexical Scope – Лексическая область видимости
           </a>
         </li>
       </ul>
