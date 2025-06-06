@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
 
-import lessonsStructure from "./lessonsStructure";
+import lessonsStructure from "@/data/lessons/javascript";
 import LessonsList from "@/components/LessonsList";
 
 const Page = () => {
