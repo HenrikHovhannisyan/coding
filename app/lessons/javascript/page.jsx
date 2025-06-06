@@ -30,8 +30,8 @@ const Page = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row w-full min-h-screen bg-gray-100 dark:bg-gray-800 p-4 gap-4">
-      <aside className="w-full md:w-1/3 lg:w-1/4 border border-gray-200 dark:border-gray-700 p-4 rounded-lg bg-gray-50 dark:bg-gray-900 shadow">
+    <div className="flex flex-col md:flex-row w-full min-h-screen gap-4">
+      <aside className="w-full md:w-1/3 lg:w-1/4 border border-gray-200 dark:border-gray-700 p-2 sm:p-3 lg:p-4 rounded-lg bg-gray-50 dark:bg-gray-900 shadow">
         <h5 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white flex items-center">
           <FontAwesomeIcon icon={faJs} className="text-yellow-400 mr-2" />
           JavaScript Lessons
@@ -45,7 +45,7 @@ const Page = () => {
         />
       </aside>
 
-      <main className="flex-1 p-6 rounded-lg bg-white dark:bg-gray-900 shadow overflow-auto border border-gray-200 dark:border-gray-700">
+      <main className="flex-1 p-2 sm:p-3 lg:p-4 rounded-lg bg-white dark:bg-gray-900 shadow overflow-auto border border-gray-200 dark:border-gray-700">
         {LessonComponent ? (
           <LessonComponent />
         ) : (
