@@ -81,13 +81,16 @@ const page = () => {
             key={index}
             className="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 p-5 flex flex-col"
           >
-            <FontAwesomeIcon
-              icon={lesson.icon}
-              className={`text-4xl mb-4 ${lesson.color}`}
-            />
-            <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {lesson.title}
-            </h5>
+            <div className="flex items-center mb-2">
+              <FontAwesomeIcon
+                icon={lesson.icon}
+                className={`w-10 h-10 mr-2 ${lesson.color}`}
+                fixedWidth
+              />
+              <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {lesson.title}
+              </h5>
+            </div>
             <p className="mb-4 text-gray-700 dark:text-gray-400 flex-grow">
               {lesson.description}
             </p>
