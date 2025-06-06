@@ -8,7 +8,7 @@ const CodeExample = ({ code, output }) => {
   const [showResult, setShowResult] = useState(false);
 
   return (
-    <div className="bg-stone-950 min-w-lg text-white p-4 rounded-lg mb-4 mt-4 overflow-auto max-w-min">
+    <div className="bg-stone-950 text-white p-4 rounded-lg mb-4 mt-4 overflow-auto w-full max-w-2xl">
       <SyntaxHighlighter
         language="javascript"
         style={atomDark}
