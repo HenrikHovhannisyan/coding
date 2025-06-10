@@ -19,7 +19,8 @@ body {
   margin-bottom: 10px;
 }
 
-.code_example p > code {
+.code_example p > code,
+.info_section_title > code {
   background: #282a36;
   border-radius: 2px;
   color: #868d9a;

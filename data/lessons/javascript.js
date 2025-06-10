@@ -3,9 +3,8 @@ const lessonsStructure = {
   Scope: "scope",
   Recursion: "recursion",
   Closures: "closures",
-  Array: {
-    Map: "array/map",
-    Sort: "array/sort",
+  "Prototype inheritance": {
+    "Prototype inheritance": "prototypes/prototype-inheritance",
   },
 };
 
