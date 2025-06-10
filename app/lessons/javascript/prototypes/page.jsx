@@ -6,8 +6,8 @@ const links = [
     title: "Прототипное наследование",
   },
   {
-    href: "prototypes/prototype-inheritance1",
-    title: "F.prototype",
+    href: "prototypes/function-prototype",
+    title: "Function prototype (F.prototype)",
   },
   {
     href: "prototypes/prototype-inheritance2",

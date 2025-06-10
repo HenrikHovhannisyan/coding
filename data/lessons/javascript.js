@@ -5,6 +5,7 @@ const lessonsStructure = {
   Closures: "closures",
   "Prototype inheritance": {
     "Prototype inheritance": "prototypes/prototype-inheritance",
+    "Function prototype": "prototypes/function-prototype",
   },
 };
 
