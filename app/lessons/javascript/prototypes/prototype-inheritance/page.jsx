@@ -214,8 +214,7 @@ true`}
           <p>
             Свойство <code>__proto__</code> немного устарело, оно существует по
             историческим причинам. Современный JavaScript предполагает, что мы
-            должны использовать функции <code>Object.getPrototypeOf</code>/
-            <code>Object.setPrototypeOf</code>
+            должны использовать функции <code>Object.getPrototypeOf</code> / <code>Object.setPrototypeOf</code>
             вместо того, чтобы получать/устанавливать прототип. Мы также
             рассмотрим эти функции позже.
           </p>
