@@ -265,6 +265,27 @@ john = {
 `}
           output={`Меня зовут: John`}
         />
+        <InfoSection title={`Примечание:`}>
+          <p>
+            Методы, определённые внутри конструктора, создаются заново для
+            каждого объекта. Это может увеличивать расход памяти. Чтобы
+            использовать один и тот же метод для всех экземпляров, лучше
+            определять его в <code>prototype</code>.
+          </p>
+          <CodeExample
+            code={`function User(name) {
+  this.name = name;
+}
+
+User.prototype.sayHi = function () {
+  console.log('Меня зовут: ' + this.name);
+};
+
+let john = new User('John');
+john.sayHi();`}
+            output={`Меня зовут: John`}
+          />
+        </InfoSection>
         <p>
           Для создания сложных объектов есть и более продвинутый синтаксис –
           <strong>классы</strong>
