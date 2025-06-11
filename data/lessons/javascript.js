@@ -3,6 +3,7 @@ const lessonsStructure = {
   Scope: "scope",
   Recursion: "recursion",
   Closures: "closures",
+  "Constructor Functions": "constructor-functions",
   "Prototype inheritance": {
     "Prototype inheritance": "prototypes/prototype-inheritance",
     "Function prototype": "prototypes/function-prototype",
