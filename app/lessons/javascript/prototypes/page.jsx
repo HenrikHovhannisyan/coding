@@ -10,7 +10,7 @@ const links = [
     title: "Function prototype (F.prototype)",
   },
   {
-    href: "prototypes/prototype-inheritance2",
+    href: "prototypes/native-prototypes",
     title: "Встроенные прототипы",
   },
 ];

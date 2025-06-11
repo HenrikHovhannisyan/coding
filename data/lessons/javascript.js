@@ -6,6 +6,7 @@ const lessonsStructure = {
   "Prototype inheritance": {
     "Prototype inheritance": "prototypes/prototype-inheritance",
     "Function prototype": "prototypes/function-prototype",
+    "Native prototypes": "prototypes/native-prototypes",
   },
 };
 
