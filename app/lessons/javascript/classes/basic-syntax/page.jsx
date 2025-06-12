@@ -460,9 +460,9 @@ new User().sayHi();`}
 }`}
         />
         <p>
-          cide MyClass технически является функцией (той, которую мы определяем
-          как cide constructor), в то время как методы, геттеры и сеттеры
-          записываются в cide MyClass.prototype.
+          <code>MyClass</code> технически является функцией (той, которую мы
+          определяем как <code>constructor</code>), в то время как методы,
+          геттеры и сеттеры записываются в <code>MyClass.prototype</code>.
         </p>
       </section>
     </LessonLayout>
