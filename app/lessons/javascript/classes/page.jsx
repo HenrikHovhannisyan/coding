@@ -5,6 +5,10 @@ const links = [
     href: "classes/basic-syntax",
     title: "Class: базовый синтаксис",
   },
+  {
+    href: "classes/class-inheritance",
+    title: "Наследование классов",
+  },
 ];
 
 const Page = () => {
