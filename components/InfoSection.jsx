@@ -4,7 +4,7 @@ import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 const InfoSection = ({ title, children }) => {
   return (
-    <section className="border-2 rounded-xl border-blue-500/50 p-3">
+    <section className="border-2 rounded-xl border-blue-500/50 p-3 my-3">
       <h3 className="text-xl font-bold mb-2">
         <FontAwesomeIcon
           icon={faCircleInfo}

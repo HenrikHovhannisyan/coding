@@ -9,6 +9,9 @@ const lessonsStructure = {
     "Function prototype": "prototypes/function-prototype",
     "Native prototypes": "prototypes/native-prototypes",
   },
+  Classes: {
+    "Class: базовый синтаксис": "classes/basic-syntax",
+  },
 };
 
 export default lessonsStructure;
