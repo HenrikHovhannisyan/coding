@@ -114,7 +114,7 @@ var name;`}
       </section>
       <section className="mb-3">
         <h2 className="text-2xl font-bold mb-2">Ключевое слово var</h2>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               <code>var</code> имеет область действия функции;
@@ -143,7 +143,7 @@ name = "Alex";`}
       </section>
       <section className="mb-3">
         <h2 className="text-2xl font-bold mb-2">Ключевые слова const / let</h2>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               <code>const</code> и <code>let</code> имеют область видимости

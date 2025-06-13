@@ -74,7 +74,7 @@ user.sayHi();`}
         <p>
           Когда вызывается <code>new User("Иван")</code>:
         </p>
-        <ul className="list-decimal ms-4">
+        <ul className="list-decimal pl-6">
           <li>
             <p>Создаётся новый объект.</p>
           </li>
@@ -123,7 +123,7 @@ console.log(typeof User);`}
           Вот что на самом деле делает конструкция{" "}
           <code>class User {`{...}`}</code>:
         </p>
-        <ul className="list-decimal ms-4">
+        <ul className="list-decimal pl-6">
           <li>
             <p>
               Создаёт функцию с именем <code>User</code>, которая становится
@@ -215,7 +215,7 @@ user.sayHi();`}
         <p>
           <strong>Однако есть важные отличия:</strong>
         </p>
-        <ul className="list-decimal ms-4">
+        <ul className="list-decimal pl-6">
           <li>
             <p>
               Во-первых, функция, созданная с помощью <code>class</code>,

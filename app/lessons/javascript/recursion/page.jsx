@@ -82,7 +82,7 @@ countDown(4);`}
 1`}
         />
         <h3 className="text-xl mt-8 mb-4">Как это работает</h3>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               Пользователь передает число в качестве аргумента при вызове
@@ -103,7 +103,7 @@ countDown(4);`}
         <h3 className="text-xl mt-8 mb-4">
           Вот, как выглядят рекурсивные вызовы по шагам:
         </h3>
-        <ul className="list-decimal ms-4">
+        <ul className="list-decimal pl-6">
           <li>
             <p>countDown(4) выводит 4 и вызывает countDown(3)</p>
           </li>
@@ -152,7 +152,7 @@ if (num >= 0) {
           output={`Факториал 3 равен 6`}
         />
         <h3 className="text-xl mt-8 mb-4">Как это работает</h3>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               Когда функция factorial() вызывается с целым положительным
@@ -176,7 +176,7 @@ if (num >= 0) {
         <h3 className="text-xl mt-8 mb-4">
           Вот, как выглядят рекурсивные вызовы по шагам:
         </h3>
-        <ul className="list-decimal ms-4">
+        <ul className="list-decimal pl-6">
           <li>
             <p>factorial(3) возвращает 3 * factorial(2)</p>
           </li>

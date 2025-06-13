@@ -29,7 +29,7 @@ const page = () => {
           Функции-конструкторы технически являются обычными функциями. Но есть
           два соглашения:
         </p>
-        <ul className="list-decimal ms-4">
+        <ul className="list-decimal pl-6">
           <li>
             <p>Имя функции-конструктора должно начинаться с большой буквы.</p>
           </li>
@@ -58,7 +58,7 @@ false`}
           Когда функция вызывается как <code>new User(...)</code>, происходит
           следующее:
         </p>
-        <ul className="list-decimal ms-4">
+        <ul className="list-decimal pl-6">
           <li>
             <p>
               Создаётся новый пустой объект, и он присваивается{" "}
@@ -157,7 +157,7 @@ let user = new function() {
           Но если <code>return</code> всё же есть, то применяется простое
           правило:
         </p>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               При вызове <code>return</code> с объектом, вместо{" "}
@@ -293,7 +293,7 @@ john.sayHi();`}
       </section>
       <section className="mb-3">
         <h2 className="text-2xl font-bold mb-2">Итого</h2>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               Функции-конструкторы или просто конструкторы, являются обычными

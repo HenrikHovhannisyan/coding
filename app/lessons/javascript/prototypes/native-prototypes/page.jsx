@@ -310,10 +310,10 @@ console.log(obj.join(','));`}
       </section>
       <section className="mb-3">
         <h2 className="text-2xl font-bold mb-2">Итого</h2>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>Все встроенные объекты следуют одному шаблону:</p>
-            <ul className="list-disc ms-4">
+            <ul className="list-disc pl-6">
               <li>
                 <p>
                   Методы хранятся в прототипах (<code>Array.prototype</code>,

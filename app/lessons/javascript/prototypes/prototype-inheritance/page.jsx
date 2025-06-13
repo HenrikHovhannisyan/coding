@@ -175,7 +175,7 @@ true`}
           , а затем в <code>animal</code>.
         </p>
         <p>Есть только два ограничения:</p>
-        <ul className="list-decimal ms-4">
+        <ul className="list-decimal pl-6">
           <li>
             <p>
               Ссылки не могут идти по кругу. JavaScript выдаст ошибку, если мы
@@ -214,7 +214,8 @@ true`}
           <p>
             Свойство <code>__proto__</code> немного устарело, оно существует по
             историческим причинам. Современный JavaScript предполагает, что мы
-            должны использовать функции <code>Object.getPrototypeOf</code> / <code>Object.setPrototypeOf</code>
+            должны использовать функции <code>Object.getPrototypeOf</code> /{" "}
+            <code>Object.setPrototypeOf</code>
             вместо того, чтобы получать/устанавливать прототип. Мы также
             рассмотрим эти функции позже.
           </p>
@@ -491,7 +492,7 @@ Inherited: eats`}
       </section>
       <section className="mb-3">
         <h2 className="text-2xl font-bold mb-2">Итого</h2>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               В JavaScript все объекты имеют скрытое свойство{" "}

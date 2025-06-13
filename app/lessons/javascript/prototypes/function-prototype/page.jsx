@@ -213,7 +213,7 @@ Rabbit.prototype.jumps = true
           возможность.
         </p>
         <p>Всё достаточно просто. Выделим основные моменты:</p>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               Свойство<code> F.prototype</code> (не путать с{" "}

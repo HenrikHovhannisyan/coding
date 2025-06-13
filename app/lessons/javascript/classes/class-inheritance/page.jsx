@@ -102,7 +102,7 @@ rabbit.hide(); // Белый кролик прячется!`}
           Например, чтобы найти метод <code>rabbit.run</code>, движок проверяет
           (снизу вверх на картинке):
         </p>
-        <ul className="list-decimal ms-4">
+        <ul className="list-decimal pl-6">
           <li>
             <p>
               Объект <code>rabbit</code> (не имеет <code>run</code>).
@@ -190,7 +190,7 @@ new User().sayHi();`}
         <p>
           У классов есть ключевое слово <code>"super"</code> для таких случаев.
         </p>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               <code>super.method(...)</code> вызывает родительский метод.
@@ -326,7 +326,7 @@ let rabbit = new Rabbit("Белый кролик", 10);`}
         />
         <p>Упс! При создании кролика – ошибка! Что не так?</p>
         <p>Если коротко, то:</p>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               <strong>
@@ -351,7 +351,7 @@ let rabbit = new Rabbit("Белый кролик", 10);`}
           свойством <code>[[ConstructorKind]]:"derived"</code>.
         </p>
         <p>Разница в следующем:</p>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               Когда выполняется обычный конструктор, он создаёт пустой объект и
@@ -499,7 +499,7 @@ rabbit`}
           Что ж, причина заключается в порядке инициализации полей. Поле класса
           инициализируется:
         </p>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               Перед конструктором для базового класса (который ничего не
@@ -533,7 +533,7 @@ rabbit`}
       <section className="mb-3">
         <h2 className="text-2xl font-bold mb-2">Итого</h2>
         <p>Чтобы унаследовать от класса: class Child extends Parent:</p>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               При этом <code>Child.prototype.__proto__</code> будет равен{" "}
@@ -542,7 +542,7 @@ rabbit`}
           </li>
         </ul>
         <p>При переопределении конструктора:</p>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               Обязателен вызов конструктора родителя <code>super()</code> в
@@ -551,7 +551,7 @@ rabbit`}
           </li>
         </ul>
         <p>При переопределении другого метода:</p>
-        <ul className="list-disc ms-4">
+        <ul className="list-disc pl-6">
           <li>
             <p>
               Мы можем вызвать <code>super.method()</code> в методе{" "}

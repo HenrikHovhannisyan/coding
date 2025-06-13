@@ -9,6 +9,10 @@ const links = [
     href: "classes/class-inheritance",
     title: "Наследование классов",
   },
+  {
+    href: "classes/static-properties-methods",
+    title: "Статические свойства и методы",
+  },
 ];
 
 const Page = () => {
