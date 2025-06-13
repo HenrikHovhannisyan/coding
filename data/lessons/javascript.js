@@ -13,6 +13,7 @@ const lessonsStructure = {
     "Class: базовый синтаксис": "classes/basic-syntax",
     "Наследование классов": "classes/class-inheritance",
     "Статические свойства и методы": "classes/static-properties-methods",
+    "Приватные и защищённые методы и свойства": "classes/private-protected-properties-methods",
   },
 };
 

@@ -13,6 +13,10 @@ const links = [
     href: "classes/static-properties-methods",
     title: "Статические свойства и методы",
   },
+  {
+    href: "classes/private-protected-properties-methods",
+    title: "Приватные и защищённые методы и свойства",
+  },
 ];
 
 const Page = () => {

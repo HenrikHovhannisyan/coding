@@ -1,7 +1,6 @@
 import React from "react";
 import LessonLayout from "@/components/LessonLayout";
 import CodeExample from "@/components/CodeExample";
-import InfoSection from "@/components/InfoSection";
 import WarningSection from "@/components/WarningSection";
 
 const page = () => {

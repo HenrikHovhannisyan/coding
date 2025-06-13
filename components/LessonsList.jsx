@@ -59,7 +59,7 @@ const LessonsList = ({
                 <li key={subTitle}>
                   <button
                     onClick={() => setSelectedPath(subPath)}
-                    className={`w-full flex items-center p-2 text-sm rounded-lg transition-colors cursor-pointer ${
+                    className={`w-full flex items-center p-2 text-sm rounded-lg text-left transition-colors cursor-pointer ${
                       selectedPath === subPath
                         ? "bg-cyan-200 text-cyan-800 dark:bg-cyan-700 dark:text-white"
                         : "text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600"
