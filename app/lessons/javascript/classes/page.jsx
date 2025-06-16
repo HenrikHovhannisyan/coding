@@ -18,8 +18,8 @@ const links = [
     title: "Приватные и защищённые методы и свойства",
   },
   {
-    href: "classes/extend-natives",
-    title: "Расширение встроенных классов",
+    href: "classes/instanceof",
+    title: 'Проверка класса: "instanceof"',
   },
 ];
 
