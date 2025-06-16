@@ -36,26 +36,24 @@ const page = () => {
       <section className="mb-3">
         <h2 className="text-2xl font-bold mb-2">Примеры</h2>
         <CodeExample
-          code={`
-          const person = {
-            name: "John Doe",
-            greet: function(greeting) {
-              console.log(\`\${greeting}, \${this.name}\`);
-            }
-          };
-          
-          const anotherPerson = { name: "Jane Doe" };
-          
-          // Call
-          person.greet.call(anotherPerson, "Hello"); // "Hello, Jane Doe"
-          
-          // Bind
-          const boundGreet = person.greet.bind(anotherPerson);
-          boundGreet("Hello"); // "Hello, Jane Doe"
-          
-          // Apply
-          person.greet.apply(anotherPerson, ["Hello"]); // "Hello, Jane Doe"
-          `}
+          code={`const person = {
+  name: "John Doe",
+  greet: function(greeting) {
+    console.log(\`\${greeting}, \${this.name}\`);
+  }
+};
+
+const anotherPerson = { name: "Jane Doe" };
+
+// Call
+person.greet.call(anotherPerson, "Hello"); // "Hello, Jane Doe"
+
+// Bind
+const boundGreet = person.greet.bind(anotherPerson);
+boundGreet("Hello"); // "Hello, Jane Doe"
+
+// Apply
+person.greet.apply(anotherPerson, ["Hello"]); // "Hello, Jane Doe"`}
         />
       </section>
       <section className="mb-3">
