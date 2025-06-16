@@ -1,7 +1,6 @@
 import React from "react";
 import LessonLayout from "@/components/LessonLayout";
 import CodeExample from "@/components/CodeExample";
-import WarningSection from "@/components/WarningSection";
 import InfoSection from "@/components/InfoSection";
 
 const page = () => {
@@ -146,6 +145,21 @@ TypeError: filteredArr.isEmpty is not a function`}
         <p>
           В этом важное отличие наследования встроенных объектов от того, что мы
           получаем с использованием <code>extends</code>.
+        </p>
+      </section>
+      <section className="mb-3">
+        <h2 className="text-2xl font-bold mb-2">Итого</h2>
+        <p>
+          При обычном наследовании <code>class Child extends Parent</code>,
+          статические методы <code>Parent</code> доступны через{" "}
+          <code>Child</code>.
+        </p>
+        <p>
+          У встроенных объектов вроде <code>Array</code>, <code>Date</code>,{" "}
+          <code>Object</code> — статические методы{" "}
+          <strong>не наследуются друг от друга</strong>, потому что они{" "}
+          <strong>не связаны через прототипы</strong> на уровне классов
+          (конструкторов).
         </p>
       </section>
     </LessonLayout>
