@@ -18,6 +18,7 @@ const lessonsStructure = {
     "Расширение встроенных классов": "classes/extend-natives",
     'Проверка класса: "instanceof"': "classes/instanceof",
   },
+  This: "this",
 };
 
 export default lessonsStructure;
