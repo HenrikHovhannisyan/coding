@@ -17,6 +17,10 @@ const links = [
     href: "classes/private-protected-properties-methods",
     title: "Приватные и защищённые методы и свойства",
   },
+  {
+    href: "classes/extend-natives",
+    title: "Расширение встроенных классов",
+  },
 ];
 
 const Page = () => {
