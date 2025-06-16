@@ -19,6 +19,7 @@ const lessonsStructure = {
     'Проверка класса: "instanceof"': "classes/instanceof",
   },
   This: "this",
+  "Call, Bind, Apply": "call-bind-apply",
 };
 
 export default lessonsStructure;
