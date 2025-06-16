@@ -20,6 +20,7 @@ const lessonsStructure = {
   },
   This: "this",
   "Call, Bind, Apply": "call-bind-apply",
+  "Execution Context": "execution-context",
 };
 
 export default lessonsStructure;
