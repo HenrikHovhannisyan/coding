@@ -23,6 +23,7 @@ const lessonsStructure = {
   "Execution Context": "execution-context",
   Destructuring: "destructuring",
   "Data Structures": "data-structures",
+  "Big O Notation": "big-o",
 };
 
 export default lessonsStructure;
