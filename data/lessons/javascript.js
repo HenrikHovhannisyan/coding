@@ -22,6 +22,7 @@ const lessonsStructure = {
   "Call, Bind, Apply": "call-bind-apply",
   "Execution Context": "execution-context",
   Destructuring: "destructuring",
+  "Data Structures": "data-structures",
 };
 
 export default lessonsStructure;
