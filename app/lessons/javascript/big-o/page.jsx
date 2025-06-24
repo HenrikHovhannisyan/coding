@@ -1,6 +1,4 @@
-"use client";
-
-import React from "react";
+ import React from "react";
 import LessonLayout from "@/components/LessonLayout";
 import CodeExample from "@/components/CodeExample";
 
