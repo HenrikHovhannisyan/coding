@@ -6,9 +6,17 @@ import {
   faPhp,
   faLaravel,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 export const lessons = [
+  {
+    title: "Web Technologies",
+    icon: faGlobe,
+    href: "/lessons/web-technologies",
+    color: "text-teal-500",
+    description:
+      "Раздел, посвящённый ключевым веб-технологиям: V8, CDN, CORS, HTTP, DNS и другим важным понятиям работы интернета и браузеров.",
+  },
   {
     title: "JavaScript",
     icon: faJs,
