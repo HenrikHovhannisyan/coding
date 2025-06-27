@@ -8,7 +8,7 @@ import lessonsStructure from "@/data/lessons/web-technologies";
 import LessonsList from "@/components/LessonsList";
 
 const Page = () => {
-  const [selectedPath, setSelectedPath] = useState("hosting");
+  const [selectedPath, setSelectedPath] = useState("v8");
   const [LessonComponent, setLessonComponent] = useState(null);
   const [openDropdowns, setOpenDropdowns] = useState({});
 
