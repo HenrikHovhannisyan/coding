@@ -2,19 +2,14 @@ import React from "react";
 
 const links = [
   {
-    href: "prototypes/prototype-inheritance",
-    title: "Прототипное наследование",
-    description: "Механизм наследования в JavaScript через прототипы объектов",
+    href: "basics/introduction",
+    title: "Введение в Python",
+    description: "Знакомство с языком Python, его особенностями и применением",
   },
   {
-    href: "prototypes/function-prototype",
-    title: "Function prototype (F.prototype)",
-    description: "Свойство prototype у функций-конструкторов и его использование",
-  },
-  {
-    href: "prototypes/native-prototypes",
-    title: "Встроенные прототипы",
-    description: "Прототипы встроенных объектов JavaScript и их расширение",
+    href: "basics/variables-and-data-types",
+    title: "Переменные и типы данных",
+    description: "Работа с переменными и основными типами данных в Python",
   },
 ];
 
@@ -22,7 +17,7 @@ const Page = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h2 className="mb-8 text-3xl font-extrabold text-center">
-        Прототипы и наследование
+        Основы Python
       </h2>
 
       <nav className="space-y-6">

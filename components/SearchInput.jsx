@@ -7,11 +7,15 @@ import Link from "next/link";
 
 // Импорт уроков
 import javascriptLessons from "../data/lessons/javascript";
+import pythonLessons from "../data/lessons/python";
+import webTechnologiesLessons from "../data/lessons/web-technologies";
 // import reactLessons from "../data/lessons/react";
 // import htmlLessons from "../data/lessons/html";
 
 const lessonsByTopic = {
   javascript: javascriptLessons,
+  python: pythonLessons,
+  "web-technologies": webTechnologiesLessons,
   // react: reactLessons,
   // html: htmlLessons,
 };

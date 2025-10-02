@@ -5,6 +5,7 @@ import {
   faCss3Alt,
   faPhp,
   faLaravel,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,6 +17,14 @@ export const lessons = [
     color: "text-teal-500",
     description:
       "Раздел, посвящённый ключевым веб-технологиям: V8, CDN, CORS, HTTP, DNS и другим важным понятиям работы интернета и браузеров.",
+  },
+  {
+    title: "Python",
+    icon: faPython,
+    href: "/lessons/python",
+    color: "text-blue-600",
+    description:
+      "Python — высокоуровневый язык программирования общего назначения с динамической типизацией и автоматическим управлением памятью.",
   },
   {
     title: "JavaScript",
