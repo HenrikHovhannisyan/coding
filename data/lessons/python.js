@@ -13,6 +13,10 @@ const lessonsStructure = {
     "Кортежи": "objects-data-structures/tuples",
     "Множества и Boolean": "objects-data-structures/sets-and-booleans",
     "Файлы": "objects-data-structures/files",
+  },
+  "Операторы Сравнения в Python": {
+    "Операторы сравнения": "comparison-operators/comparison-operators",
+    "Соединение операторов сравнения": "comparison-operators/chained-comparison-operators",
   }
 };
 
