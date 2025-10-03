@@ -17,6 +17,14 @@ const lessonsStructure = {
   "Операторы Сравнения в Python": {
     "Операторы сравнения": "comparison-operators/comparison-operators",
     "Соединение операторов сравнения": "comparison-operators/chained-comparison-operators",
+  },
+  "Операторы Python": {
+    "Введение в операторы Python": "python-statements/introduction-to-python-statements",
+    "Операторы if, elif, else": "python-statements/if-elif-else-statements",
+    "Циклы for": "python-statements/for-loops",
+    "Циклы while": "python-statements/while-loops",
+    "Полезные операторы": "python-statements/useful-operators",
+    "Генераторы списков": "python-statements/list-comprehension",
   }
 };
 
