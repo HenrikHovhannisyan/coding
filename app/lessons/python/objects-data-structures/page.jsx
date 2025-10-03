@@ -5,13 +5,55 @@ const links = [
     href: "objects-data-structures/numbers",
     title: "Числа",
     description:
-      "Работа с числами в Python: целые, вещественные, комплексные числа",
+      "Работа с числами в Python: целые, вещественные, арифметические операции",
+  },
+  {
+    href: "objects-data-structures/variable-assignment",
+    title: "Присвоение переменных",
+    description:
+      "Правила именования переменных, динамические типы данных, переопределение переменных",
   },
   {
     href: "objects-data-structures/strings",
     title: "Строки",
     description:
-      "Обработка строковых данных в Python: конкатенация, срезы, методы строк",
+      "Работа со строками: создание, индексирование, методы строк, неизменность",
+  },
+  {
+    href: "objects-data-structures/print-formatting",
+    title: "Форматирование строк",
+    description:
+      "Форматирование строк: %, .format(), f-strings - все способы форматирования",
+  },
+  {
+    href: "objects-data-structures/lists",
+    title: "Списки",
+    description:
+      "Списки в Python: создание, индексирование, методы, вложенные списки",
+  },
+  {
+    href: "objects-data-structures/dictionaries",
+    title: "Словари",
+    description:
+      "Словари: создание, доступ по ключам, вложенные словари, основные методы",
+  },
+  {
+    href: "objects-data-structures/tuples",
+    title: "Кортежи",
+    description:
+      "Кортежи: неизменяемые последовательности, методы, когда использовать",
+  },
+  {
+    href: "objects-data-structures/sets-and-booleans",
+    title: "Множества и Boolean",
+    description:
+      "Множества для уникальных элементов и логический тип Boolean с True/False",
+  },
+  {
+    href: "objects-data-structures/files",
+    title: "Файлы",
+    description:
+      "Работа с файлами: открытие, чтение, запись, добавление данных, проход по файлу",
   },
 ];
 
