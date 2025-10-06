@@ -25,6 +25,9 @@ const lessonsStructure = {
     "Циклы while": "python-statements/while-loops",
     "Полезные операторы": "python-statements/useful-operators",
     "Генераторы списков": "python-statements/list-comprehension",
+  },
+  "Методы и Функции": {
+    "Методы и Документация": "methods-and-functions/methods-and-documentation",
   }
 };
 
