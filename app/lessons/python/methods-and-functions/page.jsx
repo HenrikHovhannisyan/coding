@@ -7,6 +7,12 @@ const links = [
     description:
       "Введение в методы Python: основы работы с методами объектов, получение справки и документации",
   },
+  {
+    href: "methods-and-functions/functions",
+    title: "Функции",
+    description:
+      "Создание и использование функций в Python: синтаксис def, параметры, return, примеры практических функций",
+  },
 ];
 
 const Page = () => {

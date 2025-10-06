@@ -28,6 +28,7 @@ const lessonsStructure = {
   },
   "Методы и Функции": {
     "Методы и Документация": "methods-and-functions/methods-and-documentation",
+    "Функции": "methods-and-functions/functions",
   }
 };
 

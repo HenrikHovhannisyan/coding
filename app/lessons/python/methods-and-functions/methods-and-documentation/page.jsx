@@ -9,7 +9,6 @@ const MethodsAndDocumentationLesson = () => {
             page="python/methods-and-functions/methods-and-documentation"
         >
             <section className="mb-6">
-                <h2 className="text-2xl font-bold mb-4">Методы</h2>
                 <p className="mb-4">
                     Мы уже видели некоторые методы, когда изучали объекты и структуры данных в Python.
                     Методы - это по сути функции, встроенные в объекты. Позже в этом курсе мы узнаем,
@@ -39,9 +38,9 @@ const MethodsAndDocumentationLesson = () => {
             </section>
 
             <section className="mb-6">
+                <p className="mb-2 font-semibold">Создаем список</p>
                 <CodeExample
-                    code={`# Создаем список
-lst = [1,2,3,4,5]`}
+                    code={`lst = [1,2,3,4,5]`}
                     output={``}
                 />
             </section>
@@ -87,14 +86,14 @@ lst = [1,2,3,4,5]`}
                     Отлично! Как насчёт count()? Метод count() подсчитывает, сколько раз элемент
                     встречается в списке.
                 </p>
+                <p className="mb-2 font-semibold">Показать, сколько раз в списке встречается элемент 2</p>
                 <CodeExample
-                    code={`# Показать, сколько раз в списке встречается элемент 2
-lst.count(2)`}
+                    code={`lst.count(2)`}
                     output={`1`}
                 />
+                <p className="mb-2 font-semibold">Добавим еще несколько элементов для демонстрации</p>
                 <CodeExample
-                    code={`# Добавим еще несколько элементов для демонстрации
-lst.append(2)
+                    code={`lst.append(2)
 lst.append(2)
 print(lst)
 lst.count(2)`}
@@ -108,16 +107,16 @@ lst.count(2)`}
                 <p className="mb-4">
                     extend() добавляет все элементы из другого списка в конец текущего списка:
                 </p>
+                <p className="mb-2 font-semibold">Создаем новый список для демонстрации</p>
                 <CodeExample
-                    code={`# Создаем новый список для демонстрации
-new_list = [1, 2, 3]
+                    code={`new_list = [1, 2, 3]
 new_list.extend([4, 5, 6])
 print(new_list)`}
                     output={`[1, 2, 3, 4, 5, 6]`}
                 />
+                <p className="mb-2 font-semibold">Можно добавить любую последовательность</p>
                 <CodeExample
-                    code={`# Можно добавить любую последовательность
-new_list.extend('abc')
+                    code={`new_list.extend('abc')
 print(new_list)`}
                     output={`[1, 2, 3, 4, 5, 6, 'a', 'b', 'c']`}
                 />
@@ -128,9 +127,9 @@ print(new_list)`}
                 <p className="mb-4">
                     insert() вставляет элемент в определенную позицию в списке:
                 </p>
+                <p className="mb-2 font-semibold">Создаем список для демонстрации</p>
                 <CodeExample
-                    code={`# Создаем список для демонстрации
-demo_list = [1, 2, 4, 5]
+                    code={`demo_list = [1, 2, 4, 5]
 print("До вставки:", demo_list)
 
 # Вставляем 3 в позицию с индексом 2
@@ -139,9 +138,9 @@ print("После вставки:", demo_list)`}
                     output={`До вставки: [1, 2, 4, 5]
 После вставки: [1, 2, 3, 4, 5]`}
                 />
+                <p className="mb-2 font-semibold">Вставляем в начало списка</p>
                 <CodeExample
-                    code={`# Вставляем в начало списка
-demo_list.insert(0, 0)
+                    code={`demo_list.insert(0, 0)
 print(demo_list)`}
                     output={`[0, 1, 2, 3, 4, 5]`}
                 />
@@ -152,9 +151,9 @@ print(demo_list)`}
                 <p className="mb-4">
                     pop() удаляет и возвращает элемент из списка. По умолчанию удаляет последний элемент:
                 </p>
+                <p className="mb-2 font-semibold">Создаем список для демонстрации</p>
                 <CodeExample
-                    code={`# Создаем список для демонстрации
-pop_list = [1, 2, 3, 4, 5]
+                    code={`pop_list = [1, 2, 3, 4, 5]
 print("Исходный список:", pop_list)
 
 # Удаляем последний элемент
@@ -165,9 +164,9 @@ print("Список после pop():", pop_list)`}
 Удаленный элемент: 5
 Список после pop(): [1, 2, 3, 4]`}
                 />
+                <p className="mb-2 font-semibold">Удаляем элемент по индексу</p>
                 <CodeExample
-                    code={`# Удаляем элемент по индексу
-removed_element = pop_list.pop(1)
+                    code={`removed_element = pop_list.pop(1)
 print("Удаленный элемент по индексу 1:", removed_element)
 print("Список после pop(1):", pop_list)`}
                     output={`Удаленный элемент по индексу 1: 2
@@ -180,9 +179,9 @@ print("Список после pop(1):", pop_list)`}
                 <p className="mb-4">
                     remove() удаляет первое вхождение указанного элемента из списка:
                 </p>
+                <p className="mb-2 font-semibold">Создаем список с повторяющимися элементами</p>
                 <CodeExample
-                    code={`# Создаем список с повторяющимися элементами
-remove_list = [1, 2, 3, 2, 4, 2, 5]
+                    code={`remove_list = [1, 2, 3, 2, 4, 2, 5]
 print("До удаления:", remove_list)
 
 # Удаляем первое вхождение элемента 2
@@ -191,11 +190,11 @@ print("После remove(2):", remove_list)`}
                     output={`До удаления: [1, 2, 3, 2, 4, 2, 5]
 После remove(2): [1, 3, 2, 4, 2, 5]`}
                 />
-                <CodeExample
-                    code={`# Попытка удалить несуществующий элемент вызовет ошибку
-# remove_list.remove(10)  # ValueError: list.remove(x): x not in list`}
-                    output={``}
-                />
+                <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 mb-4">
+                    <p className="text-yellow-800 dark:text-yellow-200">
+                        <strong>Внимание!</strong> Попытка удалить несуществующий элемент вызовет ошибку ValueError.
+                    </p>
+                </div>
             </section>
 
             <section className="mb-6">
@@ -203,9 +202,9 @@ print("После remove(2):", remove_list)`}
                 <p className="mb-4">
                     reverse() переворачивает порядок элементов в списке:
                 </p>
+                <p className="mb-2 font-semibold">Создаем список для демонстрации</p>
                 <CodeExample
-                    code={`# Создаем список для демонстрации
-reverse_list = [1, 2, 3, 4, 5]
+                    code={`reverse_list = [1, 2, 3, 4, 5]
 print("До переворота:", reverse_list)
 
 reverse_list.reverse()
@@ -213,9 +212,9 @@ print("После reverse():", reverse_list)`}
                     output={`До переворота: [1, 2, 3, 4, 5]
 После reverse(): [5, 4, 3, 2, 1]`}
                 />
+                <p className="mb-2 font-semibold">Работает с любыми элементами</p>
                 <CodeExample
-                    code={`# Работает с любыми элементами
-word_list = ['apple', 'banana', 'cherry']
+                    code={`word_list = ['apple', 'banana', 'cherry']
 word_list.reverse()
 print(word_list)`}
                     output={`['cherry', 'banana', 'apple']`}
@@ -227,9 +226,9 @@ print(word_list)`}
                 <p className="mb-4">
                     sort() сортирует элементы списка по возрастанию. Можно использовать параметры для настройки сортировки:
                 </p>
+                <p className="mb-2 font-semibold">Сортировка чисел</p>
                 <CodeExample
-                    code={`# Сортировка чисел
-numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+                    code={`numbers = [3, 1, 4, 1, 5, 9, 2, 6]
 print("До сортировки:", numbers)
 
 numbers.sort()
@@ -237,15 +236,15 @@ print("После sort():", numbers)`}
                     output={`До сортировки: [3, 1, 4, 1, 5, 9, 2, 6]
 После sort(): [1, 1, 2, 3, 4, 5, 6, 9]`}
                 />
+                <p className="mb-2 font-semibold">Сортировка по убыванию</p>
                 <CodeExample
-                    code={`# Сортировка по убыванию
-numbers.sort(reverse=True)
+                    code={`numbers.sort(reverse=True)
 print("Сортировка по убыванию:", numbers)`}
                     output={`Сортировка по убыванию: [9, 6, 5, 4, 3, 2, 1, 1]`}
                 />
+                <p className="mb-2 font-semibold">Сортировка строк</p>
                 <CodeExample
-                    code={`# Сортировка строк
-fruits = ['banana', 'apple', 'cherry', 'date']
+                    code={`fruits = ['banana', 'apple', 'cherry', 'date']
 fruits.sort()
 print("Сортировка строк:", fruits)
 
@@ -270,14 +269,6 @@ print("Сортировка по длине:", fruits)`}
 count(...) method of builtins.list instance
     L.count(value) -> integer -- return number of occurrences of value`}
                 />
-            </section>
-
-            <section className="mb-6">
-                <p className="mb-4">
-                    Поиграйте с остальными методами для списка. Позднее в этом разделе будут
-                    проверочные вопросы, в которых могут понадобиться функция help() и поиск
-                    в Google, чтобы найти нужные методы для различных типов объектов!
-                </p>
             </section>
         </LessonLayout>
     );
