@@ -22,6 +22,7 @@ const FunctionsLesson = () => {
                     <li>Простые примеры функций</li>
                     <li>Использование return</li>
                     <li>Практические примеры</li>
+                    <li>*args и **kwargs для гибких функций</li>
                 </ol>
             </section>
 
@@ -233,6 +234,147 @@ def is_prime2(num):
                     <em>возвращает</em> что-то с помощью return, она завершает свою работу. Функция может 
                     выполнить несколько команд print, но только одну команду <code>return</code>.
                 </p>
+            </section>
+
+            <section className="mb-6">
+                <h2 className="text-2xl font-bold mb-4">*args и **kwargs</h2>
+                <p className="mb-4">
+                    Иногда нам нужно создать функцию, которая может принимать переменное количество аргументов. 
+                    В Python для этого используются специальные синтаксисы <code>*args</code> и <code>**kwargs</code>.
+                </p>
+                
+                <h3 className="text-xl font-bold mb-3">*args (Arguments)</h3>
+                <p className="mb-4">
+                    <code>*args</code> позволяет функции принимать любое количество позиционных аргументов. 
+                    Внутри функции <code>args</code> становится кортежем всех переданных аргументов.
+                </p>
+                <p className="mb-2 font-semibold">Простой пример с *args</p>
+                <CodeExample
+                    code={`def myfunc(*args):
+    return sum(args) * 0.05`}
+                    output={``}
+                />
+                <CodeExample
+                    code={`myfunc(40,60,20)`}
+                    output={`6.0`}
+                />
+                <p className="mb-2 font-semibold">Посмотрим, что такое args внутри функции</p>
+                <CodeExample
+                    code={`def myfunc(*args):
+    print(args)
+    print(type(args))
+    return sum(args) * 0.05
+
+myfunc(40,60,20)`}
+                    output={`(40, 60, 20)
+<class 'tuple'>
+6.0`}
+                />
+                
+                <h3 className="text-xl font-bold mb-3 mt-6">**kwargs (Keyword Arguments)</h3>
+                <p className="mb-4">
+                    <code>**kwargs</code> позволяет функции принимать любое количество именованных аргументов. 
+                    Внутри функции <code>kwargs</code> становится словарем всех переданных именованных аргументов.
+                </p>
+                <p className="mb-2 font-semibold">Простой пример с **kwargs</p>
+                <CodeExample
+                    code={`def myfunc(**kwargs):
+    if 'fruit' in kwargs:
+        print(f"Мой любимый фрукт - {kwargs['fruit']}")
+    else:
+        print("Я не нашел фрукт")
+    
+    print(kwargs)`}
+                    output={``}
+                />
+                <CodeExample
+                    code={`myfunc(fruit='apple', veggie='lettuce')`}
+                    output={`Мой любимый фрукт - apple
+{'fruit': 'apple', 'veggie': 'lettuce'}`}
+                />
+                
+                <h3 className="text-xl font-bold mb-3 mt-6">Комбинирование *args и **kwargs</h3>
+                <p className="mb-4">
+                    Можно использовать оба синтаксиса в одной функции. Порядок параметров должен быть: 
+                    обычные аргументы, *args, **kwargs.
+                </p>
+                <p className="mb-2 font-semibold">Функция с обычными аргументами, *args и **kwargs</p>
+                <CodeExample
+                    code={`def myfunc(a, b, *args, **kwargs):
+    print(f"a = {a}")
+    print(f"b = {b}")
+    print(f"args = {args}")
+    print(f"kwargs = {kwargs}")
+    
+    # Вычисляем сумму всех числовых аргументов
+    total = a + b + sum(args)
+    return total`}
+                    output={``}
+                />
+                <CodeExample
+                    code={`result = myfunc(10, 20, 30, 40, fruit='apple', veggie='lettuce')
+print(f"Общая сумма: {result}")`}
+                    output={`a = 10
+b = 20
+args = (30, 40)
+kwargs = {'fruit': 'apple', 'veggie': 'lettuce'}
+Общая сумма: 100`}
+                />
+                
+                <h3 className="text-xl font-bold mb-3 mt-6">Практический пример</h3>
+                <p className="mb-4">
+                    Давайте создадим функцию, которая может обрабатывать информацию о сотрудниках:
+                </p>
+                <CodeExample
+                    code={`def employee_info(name, *args, **kwargs):
+    print(f"Сотрудник: {name}")
+    
+    if args:
+        print("Дополнительные роли:")
+        for role in args:
+            print(f"  - {role}")
+    
+    if kwargs:
+        print("Дополнительная информация:")
+        for key, value in kwargs.items():
+            print(f"  {key}: {value}")
+    
+    print("-" * 30)`}
+                    output={``}
+                />
+                <CodeExample
+                    code={`employee_info('Иван', 'Разработчик', 'Тимлид', 
+               department='IT', experience=5, salary=100000)`}
+                    output={`Сотрудник: Иван
+Дополнительные роли:
+  - Разработчик
+  - Тимлид
+Дополнительная информация:
+  department: IT
+  experience: 5
+  salary: 100000
+------------------------------`}
+                />
+                <CodeExample
+                    code={`employee_info('Мария', department='HR', experience=3)`}
+                    output={`Сотрудник: Мария
+Дополнительная информация:
+  department: HR
+  experience: 3
+------------------------------`}
+                />
+                
+                <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 mb-4">
+                    <p className="text-blue-800 dark:text-blue-200 font-bold mb-2">
+                        Важные моменты:
+                    </p>
+                    <ul className="text-blue-700 dark:text-blue-300 space-y-1">
+                        <li>• <code>*args</code> собирает позиционные аргументы в кортеж</li>
+                        <li>• <code>**kwargs</code> собирает именованные аргументы в словарь</li>
+                        <li>• Порядок: обычные параметры, *args, **kwargs</li>
+                        <li>• Названия args и kwargs - это соглашение, можно использовать любые имена</li>
+                    </ul>
+                </div>
             </section>
 
             <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400 p-4 mt-8">
