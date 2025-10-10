@@ -13,6 +13,12 @@ const links = [
     description:
       "Создание и использование функций в Python: синтаксис def, параметры, return, примеры практических функций",
   },
+  {
+    href: "methods-and-functions/lambda-map-filter",
+    title: "Lambda-выражения, функции Map и Filter",
+    description:
+      "Анонимные функции lambda, встроенные функции map и filter для функционального программирования",
+  },
 ];
 
 const Page = () => {
