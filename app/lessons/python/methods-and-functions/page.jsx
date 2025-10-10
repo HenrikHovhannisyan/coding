@@ -19,6 +19,12 @@ const links = [
     description:
       "Анонимные функции lambda, встроенные функции map и filter для функционального программирования",
   },
+  {
+    href: "methods-and-functions/nested-statements-scope",
+    title: "Вложенные команды и область видимости",
+    description:
+      "Понимание области видимости переменных, правило LEGB, локальные и глобальные переменные",
+  },
 ];
 
 const Page = () => {
