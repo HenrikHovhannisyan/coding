@@ -31,6 +31,9 @@ const lessonsStructure = {
     "Функции": "methods-and-functions/functions",
     "Lambda-выражения, функции Map и Filter": "methods-and-functions/lambda-map-filter",
     "Вложенные команды и область видимости": "methods-and-functions/nested-statements-scope",
+  },
+  "ООП": {
+    "Объектно-Ориентированное Программирование": "object-oriented-programming/oop-introduction",
   }
 };
 
