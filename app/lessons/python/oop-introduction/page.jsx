@@ -5,8 +5,8 @@ import CodeExample from "@/components/CodeExample";
 const OOPIntroductionLesson = () => {
     return (
         <LessonLayout
-            title="Object Oriented Programming"
-            page="python/object-oriented-programming/oop-introduction"
+            title="Объектно-ориентированное программирование"
+            page="python/oop-introduction"
         >
             <section className="mb-6">
                 <p className="mb-4">
